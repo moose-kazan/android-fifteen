@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ylsoftware.game.fifteen" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="prerendered-icon" value="false" />
     <name>Fifteen Game</name>
     <description>
         Classical casual game, known as barley-break
@@ -16,7 +17,21 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
+        <icon src="/res/android/xxxhdpi.png" density="xxxhdpi" />
+        <icon src="/res/android/xxhdpi.png" density="xxhdpi" />
+        <icon src="/res/android/xhdpi.png" density="xhdpi" />
+        <icon src="/res/android/hdpi.png" density="hdpi" />
+        <icon src="/res/android/mdpi.png" density="mdpi" />
+        <icon src="/res/android/ldpi.png" density="ldpi" />
         <allow-intent href="market:*" />
+        <!--
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+            xxhdpi  : 144x144 px
+            xxxhdpi : 192x192 px
+        -->
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
