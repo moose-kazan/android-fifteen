@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ylsoftware.game.fifteen" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <preference name="prerendered-icon" value="false" />
-    <name>Fifteen Game</name>
+<widget id="com.ylsoftware.game.fifteen"
+        version="0.0.2"
+        android-versionCode="2"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Barley-break</name>
     <description>
-        Classical casual game, known as barley-break
+        Classical casual game, known as barley-break or fifteen
     </description>
     <author email="moose@ylsoftware.com" href="https://github.com/moose-kazan">
         Vadim Kalinnikov
@@ -16,7 +20,17 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="SplashScreen" value="none"/>
+    <preference name="Orientation" value="default" />
+    <preference name="prerendered-icon" value="false" />
+    <preference name="fullscreen" value="false" />
     <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
+            <activity android:theme="@android:style/Theme.DeviceDefault"></activity>
+        </edit-config>
+        <preference name="android-targetSdkVersion" value="29" />
+        <preference name="android-minSdkVersion" value="29" />
+        <preference name="ShowTitle" value="true" />
         <icon src="/res/android/xxxhdpi.png" density="xxxhdpi" />
         <icon src="/res/android/xxhdpi.png" density="xxhdpi" />
         <icon src="/res/android/xhdpi.png" density="xhdpi" />

@@ -15,7 +15,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <title>Barley-Brake</title>
     </head>
     <body>
         <div class="app">
@@ -78,6 +78,29 @@
 				</tr>
             </table>
         </div>
+		<div class="bottomButtonBar">
+			<div class="bottomButton">
+				<a href="#" id="buttonReStart">
+					<img src="img/newgame.png" />
+				</a>
+			</div>
+			<div class="bottomButton">
+				<a href="#" id="buttonAbout">
+					<img src="img/about.png" />
+				</a>
+			</div>
+		</div>
+		<div class="aboutRoot" id="about" style="display: none;">
+			<div class="aboutDialog">
+				<h1>Barley-Brake</h1>
+				<p>Classical casual game, known as &laquo;barley-break&raquo; or &laqup;Fifteen&Raquo;, written on Cordova. It's just study project and published under terms of GNU Lesser General Public License (LGPL) v3.0.</p>
+				<p>
+					Author: Vadim Kalinnikov<br />
+					<a href="https://github.com/moose-kazan/android-fifteen" target="_blank">github.com/moose-kazan/android-fifteen</a>
+				</p>
+				<button id="aboutOK">OK</button>
+			</div>
+		</div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>

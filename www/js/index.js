@@ -12,8 +12,33 @@ var appClass = function () {
 		document.querySelectorAll(".gameButton").forEach(function(eNode) {
 			eNode.addEventListener("click", gameButtonClick);
 		});
+		document.getElementById("buttonReStart").addEventListener("click", restartGame);
+		document.getElementById("buttonAbout").addEventListener("click", aboutShow);
+		document.getElementById("aboutOK").addEventListener("click", aboutHide);
 		initNewGame();
 	};
+	
+	function aboutShow() {
+		document.getElementById("about").style.display = "";
+	}
+
+	function aboutHide() {
+		document.getElementById("about").style.display = "none";
+	}
+
+	function restartGame() {
+		navigator.notification.confirm(
+			"Start new game?",
+			function (num) {
+				if (num == 1) {
+					initNewGame();
+				}
+			},
+			"Are you sure?",
+			["Yes", "No"]
+		);
+		return false;
+	}
 	
 	function initNewGame() {
 		for (let i = 0; i < 32; i++) {
