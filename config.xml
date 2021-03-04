@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ylsoftware.game.fifteen"
-        version="0.0.2"
-        android-versionCode="2"
+        version="0.0.3"
+        android-versionCode="4"
         xmlns="http://www.w3.org/ns/widgets"
         xmlns:cdv="http://cordova.apache.org/ns/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Barley-break</name>
     <description>
-        Classical casual game, known as barley-break or fifteen
+        Classic casual game, known as barley-break or fifteen
     </description>
     <author email="moose@ylsoftware.com" href="https://github.com/moose-kazan">
         Vadim Kalinnikov
